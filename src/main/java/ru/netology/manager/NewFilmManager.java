@@ -35,11 +35,11 @@ public class NewFilmManager {
 
     public FilmItem[] findLast() {           //вывод последних
         int resultLength;
-        if (items.length < 5) {
+        if (items.length < maxFilms) {        //правка
             resultLength = items.length;
             ;
         } else {
-            resultLength = 5;
+            resultLength = maxFilms;
         }
 
         FilmItem[] all = new FilmItem[resultLength];
